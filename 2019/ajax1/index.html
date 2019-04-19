@@ -101,17 +101,17 @@
 
 
 
-<meta name="description" content="����ajax�岿�� �����첽���� url method �������� ע���¼� ��ȡ���ص�����  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post������Ҫ����ajax.setRequestHeader(&amp;quot;Co">
+<meta name="description" content="创建ajax五部曲 创建异步对象 url method 发送请求 注册事件 获取返回的数据  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post请求需要添加ajax.setRequestHeader(&amp;quot;Content-type&amp;quot;,&amp;quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ajax1">
 <meta property="og:url" content="http://yoursite.com/2019/ajax1/index.html">
 <meta property="og:site_name" content="Tiga丶">
-<meta property="og:description" content="����ajax�岿�� �����첽���� url method �������� ע���¼� ��ȡ���ص�����  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post������Ҫ����ajax.setRequestHeader(&amp;quot;Co">
+<meta property="og:description" content="创建ajax五部曲 创建异步对象 url method 发送请求 注册事件 获取返回的数据  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post请求需要添加ajax.setRequestHeader(&amp;quot;Content-type&amp;quot;,&amp;quot;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-18T16:05:19.833Z">
+<meta property="og:updated_time" content="2019-04-19T13:01:30.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax1">
-<meta name="twitter:description" content="����ajax�岿�� �����첽���� url method �������� ע���¼� ��ȡ���ص�����  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post������Ҫ����ajax.setRequestHeader(&amp;quot;Co">
+<meta name="twitter:description" content="创建ajax五部曲 创建异步对象 url method 发送请求 注册事件 获取返回的数据  123456789var ajax = new XMLHttpRequst();ajax.open(&amp;apos;get&amp;apos;,&amp;apos;ajax.php&amp;apos;);//post请求需要添加ajax.setRequestHeader(&amp;quot;Content-type&amp;quot;,&amp;quot;">
 
 
 
@@ -288,7 +288,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-19T00:01:42+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-19T21:00:46+08:00">
                 2019-04-19
               </time>
             
@@ -326,15 +326,14 @@
       
 
       
-        <h2 id="����ajax�岿��"><a href="#����ajax�岿��" class="headerlink" title="����ajax�岿��"></a>����ajax�岿��</h2><ul>
-<li>�����첽����</li>
+        <h2 id="创建ajax五部曲"><a href="#创建ajax五部曲" class="headerlink" title="创建ajax五部曲"></a>创建ajax五部曲</h2><ul>
+<li>创建异步对象</li>
 <li>url method</li>
-<li>��������</li>
-<li>ע���¼�</li>
-<li>��ȡ���ص�����</li>
+<li>发送请求</li>
+<li>注册事件</li>
+<li>获取返回的数据</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var ajax = new XMLHttpRequst();</span><br><span class="line">ajax.open(&apos;get&apos;,&apos;ajax.php&apos;);</span><br><span class="line">//post������Ҫ����ajax.setRequestHeader(&quot;Content-type&quot;,&quot;application/x-www-from-urlencoded&quot;);</span><br><span class="line">ajax.send();</span><br><span class="line">ajxa.onreadystatechange = ()&#123;</span><br><span class="line">    if(ajax.readyState == 4 &amp;&amp; ajax.status == 200)&#123;</span><br><span class="line">        console.log(ajax.responseText);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var ajax = new XMLHttpRequst();</span><br><span class="line">ajax.open(&apos;get&apos;,&apos;ajax.php&apos;);</span><br><span class="line">//post请求需要添加ajax.setRequestHeader(&quot;Content-type&quot;,&quot;application/x-www-from-urlencoded&quot;);</span><br><span class="line">ajax.send();</span><br><span class="line">ajxa.onreadystatechange = ()&#123;</span><br><span class="line">    if(ajax.readyState == 4 &amp;&amp; ajax.status == 200)&#123;</span><br><span class="line">        console.log(ajax.responseText);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -500,7 +499,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#����ajax�岿��"><span class="nav-number">1.</span> <span class="nav-text">����ajax�岿��</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建ajax五部曲"><span class="nav-number">1.</span> <span class="nav-text">创建ajax五部曲</span></a></li></ol></div>
             
 
           </div>
