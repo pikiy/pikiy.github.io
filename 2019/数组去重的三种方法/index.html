@@ -101,17 +101,17 @@
 
 
 
-<meta name="description" content="angularjs自定义指令AngularJS允许根据实际业务需要自定义指令，通过angular全局对象下的directive方法实现。 12345678910111213var App = angular.module(&amp;apos;App,[]&amp;apos;);App.directive(&amp;apos;tag&amp;apos;,function()&amp;#123;    return&amp;#123;">
+<meta name="description" content="在学校的时候没有什么时间，实习期间也很累没有什么时间更新自己的博客。现在闲下来了终于想起了原来我还有个博客存在。多的不说了进入正题。今天看了一些数组去重的方法，不得不说还真的有点多，我就写写我常用的和今天刚学的一个吧。 ES5数组去重常用方法12345678910function uniqe(arr)&amp;#123;    for(var i = 0;i &amp;lt; arr.length;i++)&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="angularjs3">
-<meta property="og:url" content="http://yoursite.com/2019/angularjs3/index.html">
+<meta property="og:title" content="数组去重的三种方法">
+<meta property="og:url" content="http://yoursite.com/2019/数组去重的三种方法/index.html">
 <meta property="og:site_name" content="Tiga丶">
-<meta property="og:description" content="angularjs自定义指令AngularJS允许根据实际业务需要自定义指令，通过angular全局对象下的directive方法实现。 12345678910111213var App = angular.module(&amp;apos;App,[]&amp;apos;);App.directive(&amp;apos;tag&amp;apos;,function()&amp;#123;    return&amp;#123;">
+<meta property="og:description" content="在学校的时候没有什么时间，实习期间也很累没有什么时间更新自己的博客。现在闲下来了终于想起了原来我还有个博客存在。多的不说了进入正题。今天看了一些数组去重的方法，不得不说还真的有点多，我就写写我常用的和今天刚学的一个吧。 ES5数组去重常用方法12345678910function uniqe(arr)&amp;#123;    for(var i = 0;i &amp;lt; arr.length;i++)&amp;#1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-20T06:28:44.761Z">
+<meta property="og:updated_time" content="2019-11-17T14:21:54.586Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="angularjs3">
-<meta name="twitter:description" content="angularjs自定义指令AngularJS允许根据实际业务需要自定义指令，通过angular全局对象下的directive方法实现。 12345678910111213var App = angular.module(&amp;apos;App,[]&amp;apos;);App.directive(&amp;apos;tag&amp;apos;,function()&amp;#123;    return&amp;#123;">
+<meta name="twitter:title" content="数组去重的三种方法">
+<meta name="twitter:description" content="在学校的时候没有什么时间，实习期间也很累没有什么时间更新自己的博客。现在闲下来了终于想起了原来我还有个博客存在。多的不说了进入正题。今天看了一些数组去重的方法，不得不说还真的有点多，我就写写我常用的和今天刚学的一个吧。 ES5数组去重常用方法12345678910function uniqe(arr)&amp;#123;    for(var i = 0;i &amp;lt; arr.length;i++)&amp;#1">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/angularjs3/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/数组去重的三种方法/"/>
 
 
 
 
 
-  <title>angularjs3 | Tiga丶</title>
+  <title>数组去重的三种方法 | Tiga丶</title>
   
 
 
@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/angularjs3/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/数组去重的三种方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tiga丶">
@@ -276,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">angularjs3</h1>
+          <h1 class="post-title" itemprop="name headline">数组去重的三种方法</h1>
         
 
         <div class="post-meta">
@@ -288,8 +288,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-20T14:28:18+08:00">
-                2019-04-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-17T22:21:29+08:00">
+                2019-11-17
               </time>
             
 
@@ -326,8 +326,17 @@
       
 
       
-        <h4 id="angularjs自定义指令"><a href="#angularjs自定义指令" class="headerlink" title="angularjs自定义指令"></a>angularjs自定义指令</h4><p>AngularJS允许根据实际业务需要自定义指令，通过angular全局对象下的directive方法实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var App = angular.module(&apos;App,[]&apos;);</span><br><span class="line">App.directive(&apos;tag&apos;,function()&#123;</span><br><span class="line">    return&#123;</span><br><span class="line">        restrct: &apos;ECMA&apos;,</span><br><span class="line">        //e:element可作标签</span><br><span class="line">        //c:class可作类名</span><br><span class="line">        //m:make标记</span><br><span class="line">        //a:attribute可作标签使用</span><br><span class="line">        template: &apos;&lt;h1&gt;hello angular&lt;/h1&gt;&apos;,</span><br><span class="line">        templateUr:&apos;路径&apos;,</span><br><span class="line">        replace:&apos;替换&apos;,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+        <p>在学校的时候没有什么时间，实习期间也很累没有什么时间更新自己的博客。现在闲下来了终于想起了原来我还有个博客存在。多的不说了进入正题。今天看了一些数组去重的方法，不得不说还真的有点多，我就写写我常用的和今天刚学的一个吧。</p>
+<h4 id="ES5数组去重常用方法"><a href="#ES5数组去重常用方法" class="headerlink" title="ES5数组去重常用方法"></a>ES5数组去重常用方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function uniqe(arr)&#123;</span><br><span class="line">    for(var i = 0;i &lt; arr.length;i++)&#123;</span><br><span class="line">        for(var j = i + 1;j &lt; arr.lenght;j++ )&#123;</span><br><span class="line">            if(arr[i] === arr[j])&#123;</span><br><span class="line">                arr.splice(j,1);</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种方法也比较容易理解，两层循环对比第一层与第二层的数据相同的话就使用splice方法切割掉。也是ES5最常使用的方法</p>
+<h4 id="ES6数组去重常用方法"><a href="#ES6数组去重常用方法" class="headerlink" title="ES6数组去重常用方法"></a>ES6数组去重常用方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function uniqe(arr)&#123;</span><br><span class="line">    return Array.from(new Set(arr))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个没什么好解释的也就是为了方便开发ES6中给出的一个新方法。</p>
+<h4 id="使用fliter和hasOwnProprety"><a href="#使用fliter和hasOwnProprety" class="headerlink" title="使用fliter和hasOwnProprety"></a>使用fliter和hasOwnProprety</h4><p>这里先要说一下hasOwnProprety这个属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这个方法可以用来检测一个对象是否含有特定的自身属性</span><br><span class="line">语法：obj.hasOwnProperty(prop)</span><br><span class="line">参数：要检测的属性 字符串 名称或者 Symbol</span><br><span class="line">返回值： 用来判断某个对象是否含有指定的属性的 Boolean</span><br></pre></td></tr></table></figure>
+<p>接下来就是代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function uniqe(arr)&#123;</span><br><span class="line">    var obj = &#123;&#125;;</span><br><span class="line">    return arr.fliter(function(item,arr)&#123;</span><br><span class="line">        return obj.hasOwnProperty(typeof item + item) ? false : (typeof obj[item + item] = true)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个方法是我今天刚看得感觉挺有创意的也就学习了一下。判断对象里有没有这个属性逐一对比存在的就不返回不存在的就返回达到了去重的效果。</p>
+
       
     </div>
     
@@ -351,8 +360,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/angularjs2/" rel="next" title="angularjs2">
-                <i class="fa fa-chevron-left"></i> angularjs2
+              <a href="/2019/angularjs3/" rel="next" title="angularjs3">
+                <i class="fa fa-chevron-left"></i> angularjs3
               </a>
             
           </div>
@@ -360,10 +369,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/数组去重的三种方法/" rel="prev" title="数组去重的三种方法">
-                数组去重的三种方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -497,7 +502,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#angularjs自定义指令"><span class="nav-number">1.</span> <span class="nav-text">angularjs自定义指令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ES5数组去重常用方法"><span class="nav-number">1.</span> <span class="nav-text">ES5数组去重常用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ES6数组去重常用方法"><span class="nav-number">2.</span> <span class="nav-text">ES6数组去重常用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用fliter和hasOwnProprety"><span class="nav-number">3.</span> <span class="nav-text">使用fliter和hasOwnProprety</span></a></li></ol></div>
             
 
           </div>
