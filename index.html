@@ -257,6 +257,142 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/flex布局/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tiga丶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2950887135,3895970136&fm=27&gp=0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiga丶">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/flex布局/" itemprop="url">flex布局</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-20T22:36:12+08:00">
+                2019-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>相对于传统的position丶float布局来说flex布局使用起来就方便了很多，flex布局将成为未来布局的首选方案。因为markdown需要会员上传图片才方便，做为穷逼的我。。只能不用图片写一些基础语法。</p>
+<h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><p>首先得有一个容器，给容器设置display：flex属性，那么它的所有子元素将会成为容器的成员。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id = &quot;demo&quot;&gt;</span><br><span class="line">  &lt;div class = &quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class = &quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class = &quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class = &quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">CSS</span><br><span class="line">#demo&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里的inner就成为了flex项目成员。</p>
+<h4 id="容器的属性"><a href="#容器的属性" class="headerlink" title="容器的属性"></a>容器的属性</h4><p>flex-direction：row | row-reverse |  column | column-reverse;决定主轴的方向</p>
+<p>flex-wrap：nowrap | wrap | wrap-reverse;当项目在主轴上装不下的时候的换行方式</p>
+<p>flex-flow：<flex-direction> || <flex-wrap>;flex-direction属性和flex-wrap属性的简写形式，默认 row nowrap。</flex-wrap></flex-direction></p>
+<p>justify-content：flex-start | flex-end | center | space-between |space-around;项目在主轴上的对齐方式</p>
+<p>align-items：flex-start | flex-end | center |baseline | stretch;定义项目在交叉轴上如何对齐。</p>
+<p>align-content：flex-start | flex-end | center | spance-between | space-around |stretch;定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+<h4 id="项目的属性"><a href="#项目的属性" class="headerlink" title="项目的属性"></a>项目的属性</h4><p>order 定义项目的排列顺序。数值越小，排列越靠前，默认为0.</p>
+<p>flex-grow 属性定义项目的放大比例，默认值为0，即如果存在剩余空间，也不放大。如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目为1，则牵着占据的剩余空间将比其他项多一倍</p>
+<p>flex-shrink 定义了项目的缩小比例，默认为1，即如果空间不足，改项目将缩小。</p>
+<p>flex-basis 在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</p>
+<p>flex flex属性是flex-grow，flex-shrink和flex-basis的简写，默认值为0 1 auto。后面两个属性可选</p>
+<p>align-self 允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，等同于stretch。该属性可能取6个值，除了auto，其他都与align-items属性完全一致。</p>
+<p>参考博客链接：<a href="https://www.cnblogs.com/dreamperson/p/9367008.html" target="_blank" rel="noopener">https://www.cnblogs.com/dreamperson/p/9367008.html</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/数组与数组方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1400,128 +1536,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/typeof-类型转换/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Tiga丶">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2950887135,3895970136&fm=27&gp=0.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Tiga丶">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/typeof-类型转换/" itemprop="url">typeof.类型转换</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-19T13:14:51+08:00">
-                2018-09-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h5 id="typeof-类型转换"><a href="#typeof-类型转换" class="headerlink" title="typeof,类型转换"></a>typeof,类型转换</h5><h5 id="typeof可以返回数据类型-number-string-boolean-object-undefined-function"><a href="#typeof可以返回数据类型-number-string-boolean-object-undefined-function" class="headerlink" title="typeof可以返回数据类型(number string boolean object undefined function)"></a>typeof可以返回数据类型(number string boolean object undefined function)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var num = &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">console.log(typeof(num));</span><br></pre></td></tr></table></figure>
-<h5 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Number(mix)//转换为数字类型并返回</span><br><span class="line">parseint(string.radix)//转换为整型并返回</span><br><span class="line">parseFloat(string)//转换为浮点型并返回</span><br><span class="line">toString(radix)//</span><br><span class="line">String(mix)//转换为字符串并返回</span><br><span class="line">Boolean()//转换为Boolean值</span><br></pre></td></tr></table></figure>
-<h5 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">a ----&gt;string</span><br><span class="line">undefined ----&gt;undefined</span><br><span class="line">NaN ----&gt;number</span><br><span class="line">null ----&gt;object</span><br><span class="line"></span><br><span class="line">var a = &quot;123abc&quot;</span><br><span class="line">+a----&gt; number</span><br><span class="line">!!a ----&gt;boolean</span><br><span class="line">a + &quot;&quot; ----&gt; string</span><br><span class="line"></span><br><span class="line">1 == &quot;1&quot;----&gt; boolean</span><br><span class="line">NaN == NaN----&gt;boolean</span><br><span class="line">NaN == undefined----&gt; boolean</span><br><span class="line">&quot;11&quot; + 11 ----&gt;string  当加号两侧任意一侧有字符串都调用字符串</span><br><span class="line">1 === &quot;1&quot; ----&gt; boolean</span><br><span class="line">typeof(typeof(a))----&gt; string</span><br><span class="line"> </span><br><span class="line">NaN----&gt;非数</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1572,7 +1586,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
